@@ -8,7 +8,7 @@
 <% end %>
 
 <h2>Todo<h2>
-<%=link_to "New Todo", new_todo_path%>
+<%=link_to "New Todo", todos_new_path%>
 <%= @todo.each do |t|%>
   <h4>Task:</h4> <%= t.tasks %>
   <h4>Finished?:</h4> <%= t.finished %>
