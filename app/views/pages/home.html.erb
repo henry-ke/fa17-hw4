@@ -1,0 +1,25 @@
+<h1>Homework 4</h>
+
+
+<h2>Cats<h2>
+<%= @cats.each do |c|%>
+  <h4>Name:</h4> <%= c.name %>
+  <br />
+<% end %>
+
+<h2>Todo<h2>
+<%=link_to "New Todo", new_todo_path%>
+<%= @todo.each do |t|%>
+  <h4>Task:</h4> <%= t.tasks %>
+  <h4>Finished?:</h4> <%= t.finished %>
+  <br />
+<% end %>
+
+
+<h2>Users<h2>
+<%= @users.each do |u|%>
+  <h4>Username:<h4> <%= u.username %>
+  <h4>Email:<h4> <%= u.email %>
+  <h4>Age:<h4> <%= u.age %>
+  <br />
+<% end %>
